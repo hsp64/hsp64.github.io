@@ -1,0 +1,687 @@
+
+button {
+    background: none;
+    border: none;
+}
+body {
+    font-size: 16px;
+}
+/* 해더 */
+header.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    font-size: 16px;
+}
+header.header-container .header-left {
+    font-size: 1.1em;
+}
+header.header-container .header-left:hover {
+    color: #0076fd;
+    cursor: pointer;
+}
+header.header-container .header-left .header-menu-icon{
+    margin-right: 5px;
+}
+header.header-container .header-logo {
+    padding-left: 10.5%;
+}
+header.header-container .header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header.header-container .header-right .hyundai-card {
+    font-size: 0.95em;
+    position: relative;
+    padding: 5px 20px;
+    height: 100%;
+}
+header.header-container .header-right .hyundai-card .n-badge i {
+    color: #0076fd;
+    position: absolute;
+    left: 55.5%;
+    top: -5.5%
+}
+header.header-container .header-right .hyundai-card .n-badge span {
+    font-size: 0.7em;
+    color: #fff;
+    position: absolute;
+    left: 62%;
+    top: 3%
+}
+header.header-container .header-right .hyundai-card:hover {
+    color: #0076fd;
+    cursor: pointer;
+}
+header.header-container .header-right .hidden-card-name {
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 0.7em;
+    color: #fff;
+    background: #000;
+    border-radius: 10px;
+    padding: 1px 5px;
+    right: -5px;
+    top: 25px;
+    opacity: 0;
+}
+header.header-container .header-right .hyundai-card:hover .hidden-card-name {
+    opacity: 1;
+}
+header.header-container .header-right .find-pc {
+    padding-left: 30px;
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("//rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location.svg") no-repeat;
+}
+header.header-container .header-right .find-pc:hover {
+    background: url("//rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg") no-repeat;
+    cursor: pointer;
+}
+header.header-container .header-right .find-pc:hover .hidden-find-pc{
+    opacity: 1;
+}
+header.header-container .header-right .hidden-find-pc {
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 0.7em;
+    color: #fff;
+    background: #000;
+    border-radius: 10px;
+    padding: 1px 5px;
+    right: -2px;
+    top: 25px;
+    opacity: 0;
+}
+header.header-container .header-right .find-icon:hover .hidden-find-pc {
+    opacity: 1;
+}
+header.header-container .header-right .join {
+    font-size: 0.95em;
+    padding: 5px 10px;
+    height: 100%;
+    margin-right: 5px;
+}
+header.header-container .header-right .join:hover {
+    color: #0076fd;
+}
+header.header-container .header-right .log-in {
+    font-size: 0.9em;
+    border: 2px solid #000;
+    border-radius: 25px;
+    height: 100%;
+    padding: 8px 18px;
+    font-weight: 750;
+    margin-right: 10px;
+    transform: scale(1.1);
+}
+header.header-container .header-right .log-in:hover {
+    color: #fff;
+    border: 2px solid #0076fd;
+    background: #0076fd;
+    border-radius: 25px;
+}
+
+/* nav */
+section.nav-wind {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #090806;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav-wind .wind-logo {
+    flex: 2;
+    position: relative;
+    right: 2em;
+}
+.nav-wind .wind-logo:hover {
+    cursor: pointer;
+}
+.nav-wind .wind-logo img {
+    width: 55%;
+}
+section.nav-wind .center-list {
+    flex: 7;
+}
+section.nav-wind .center-list ul{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+section.nav-wind .center-list ul li {
+    padding-right: 8%;
+}
+section.nav-wind .center-list ul li a:hover {
+    color: #88cafd;
+}
+
+section.nav-wind .wind-right {
+    flex: 1;
+    align-items: center;
+    color: #fff;
+
+}
+section.nav-wind .wind-right .wind-coupon-youtube{
+    display: flex;
+    justify-content: flex-end;
+}
+section.nav-wind .wind-right .wind-coupon-youtube a {
+    padding-right: 15%;
+}
+section.nav-wind .wind-right .wind-coupon-youtube a:hover{
+    opacity: 0.6;
+    }
+.wind-start .pc-start {
+    padding: 0;
+}
+.wind-start {
+}
+.wind-start:hover{
+    cursor: pointer;
+    background: center center no-repeat url("https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/game_start_hover.png");
+}
+section.nav-wind .wind-start{
+    overflow: hidden;
+    position: relative;
+}
+section.nav-wind div.wind-start img {
+    position: absolute;
+    z-index: 2;
+    left: 10%;
+    top: 28%;
+
+}
+
+section.nav-wind div.wind-start .pc-start {
+    height: 100%;
+}
+section.nav-wind div.wind-start .pc-start:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+section.nav-wind div.wind-start .pc-start video {
+    transform: scale(1.1);
+}
+aside.right-cd-playlist {
+    display: flex;
+    background: no-repeat url("https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/common/bgm_border.png");
+    background-size: contain;
+    color: #fff;
+    position: sticky;
+    left: 83%;
+    top: 13.35em;
+    height: 110px;
+    width: 10%;
+    z-index: 11;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+}
+aside.right-cd-playlist .cd-icon {
+    position: absolute;
+    left: 35%;
+    bottom: 99%;
+}
+aside.right-cd-playlist .cd-bar {
+    border: 1px solid #4c4c4c;
+    width: 80%;
+}
+
+aside.right-cd-playlist .hidden-cd-list {
+    position: absolute;
+    bottom: 0;
+    width: 3em;
+    height: 1.5em;
+    border-radius: 50%;
+}
+aside.right-cd-playlist .hidden-cd-list:hover {
+        cursor: pointer;
+}
+
+/* 메인 컨텐츠*/
+main.main-container {
+    background: top center no-repeat url("https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/visual_250522.jpg");
+}
+.main-container section.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 4em;
+}
+.info-img {
+    border-bottom: 8px solid #0082f0;
+    width: 90%;
+}
+.info-img-under-bar {
+    width: 1200px;
+    position: relative;
+    bottom: 8px;
+}
+.main-content .info-img-under-bar .info-bar-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 0 2em;
+}
+.main-content .info-img-under-bar .info-bar-icon button{
+    padding-right: 1.4em;
+    color: #fff;
+}
+.main-content .info-img-under-bar .info-bar-icon button:hover {
+    cursor: pointer;
+}
+.main-content .info-img-under-bar .info-bar-icon button span {
+    font-size: 2em;
+    opacity: 0.5;
+}
+.main-content .info-img-under-bar .info-bar-icon .info-nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    justify-content: space-between;
+}
+.main-content .info-img-under-bar .info-bar-icon .info-nav ul li  {
+    display: flex;
+    width: 180px;
+    align-items: center;
+    font-size: 1.1em;
+    height: 4.5em;
+    opacity: 0.5;
+}
+.main-content .info-img-under-bar .info-bar-icon .info-nav ul li:first-child {
+    opacity: inherit;
+}
+.main-content .info-img-under-bar .info-bar-icon .info-nav ul li span {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.main-content .info-img-under-bar .info-bar-icon .info-nav ul li:hover {
+    opacity: inherit;
+    cursor: pointer;
+}
+
+/*중앙 정보 컨텐츠*/
+.center-info {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: #fff;
+    width: 1200px;
+    margin-top: 4em;
+    position: relative;
+
+}
+.center-info ul.center-left-list {
+    font-size: 1.8em;
+    font-weight: 700;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid rgba(255,255,255,0.5);
+    flex: 1;
+}
+.center-info .center-left-list li {
+    opacity: 0.5;
+}
+.center-info .center-left-list li:first-child {
+    opacity: 1;
+}
+.center-info .center-left-list li:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+.center-info  .plus-icon  {
+    color: #fff;
+    border: 1px #ffffff solid;
+    border-radius: 50%;
+    position: absolute;
+    left: 22.2%;
+    font-size: 1.3em;
+    top: 40%;
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(3px);
+}
+.center-info  .plus-icon:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    background: rgba(255,255,255,0.5);
+}
+.center-info  .center-right-list {
+    height: 180px;
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.1em;
+    padding-left: 4.5em;
+}
+.center-info  .center-right-list li{
+    display: flex;
+    justify-content: space-between;
+}
+.center-info  .center-right-list li span{
+    opacity: 0.5;
+}
+.center-info  .center-right-list li a:hover{
+    cursor: pointer;
+}
+.center-media {
+    margin-top: 80px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center-media h3 {
+    font-size: 2em;
+    color: #fbfbfb;
+    font-weight: 700;
+}
+.center-media h3:hover {
+    cursor: pointer;
+}
+.center-media  .center-media-icon {
+    display: flex;
+    width: 650px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+.center-media  .center-media-icon button img{
+    width: 8px;
+    height: 14px;
+    opacity: 0.5;
+}
+.center-media  .center-media-icon button img:hover{
+    cursor: pointer;
+}
+.center-media  .center-media-icon .media-bar {
+    border: 2px solid #fdfdfd;
+    width: 80%;
+    background: #605f5b;
+}
+.center-media .media-tv  button{
+    font-size: 1.3em;
+    color: #f9f9f9;
+}
+.center-media .media-tv  button:hover {
+    cursor: pointer;
+}
+.center-media .media-tv  .tv-right{
+    font-size: 1.3em;
+    color: #f9f9f9;
+    opacity: 0.5;
+}
+.center-media .plus-icon {
+    font-size: 1.3em;
+    color: #fff;
+    border: 1px #ffffff solid;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(3px);
+}
+.plus-icon:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    background: rgba(255,255,255,0.5);
+}
+.media-img {
+    position: relative;
+    top: 70px;
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+.media-img  a img{
+    height: 220px;
+    width: 390px;
+    object-fit: cover;
+    display: block;
+}
+.media-img p {
+    width: 390px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 서브 직업 컨텐츠 */
+.sub-content {
+    margin-top: 100px;
+    background: bottom center no-repeat url("https://ssl.nexon.com/s2/Game/baramy/2023/brand/0921/pc/job_bg.jpg");
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub-content .sub-title button{
+    margin: 0;
+    padding: 0;
+}
+.sub-content .sub-title .right-red {
+    opacity: 0.3;
+}
+.sub-content .sub-title button:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+.sub-character {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 70px;
+    margin: 50px 0;
+}
+.sub-character .warrior-small-img {
+    width: 100%;
+    position: relative;
+    left: 11%;
+}
+.sub-character .characters {
+    position: relative;
+    right: 8%;
+}
+.sub-character .left-arrow {
+    position: relative;
+    left: 5%;
+    top: 45%;
+}
+.sub-character .right-arrow {
+    position: relative;
+    right: 5.5%;
+    top: 45%;
+}
+section.warrior-container {
+    margin-left: 10px;
+}
+.sub-warrior {
+    width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+}
+.sub-warrior .warrior-symbol {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.warrior-intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 25px;
+}
+.warrior-intro h2 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+.warrior-intro span {
+    position: relative;
+    bottom: 12px;
+    font-size: 1.2em;
+    color: #626262;
+    border-left: 1px solid #a5a5a5;
+    padding-left: 10px;
+}
+.warrior-video {
+    display: flex;
+    justify-content: flex-start;
+}
+.warrior-video video {
+    width: 420px;
+    height: 236px;
+    margin-bottom: 15px;
+}
+.warrior-skill-img:hover {
+    cursor: pointer;
+}
+.warrior-skills-img {
+    position: relative;
+    bottom: 60px;
+    left: 72px;
+}
+.warrior-skills-img:hover {
+    cursor: pointer;
+}
+.warrior-video:hover {
+    cursor: pointer;
+}
+.warrior-skills-text {
+    font-weight: 700;
+    font-size: 1.1em;
+    position: relative;
+    bottom: 40px;
+    background: #0d364e;
+    width: 420px;
+    border-radius: 10px;
+    padding: 20px  15px;
+    letter-spacing: 1px;
+    margin-bottom: 65px;
+}
+.warrior-skills-text span{
+    color: #fde200;
+}
+.warrior-skills-text p{
+    color: #fdfdfd;
+}
+.warrior-container {
+    position: relative;
+}
+.warrior-big-img {
+    position: absolute;
+    left: 58%;
+    top: 11%;
+}
+.grade-background {
+    position: absolute;
+    left: 80%;
+    bottom: 28%;
+}
+.warrior-grade {
+    width: 234px;
+    height: 430px;
+    border-radius: 20px;
+    position: absolute;
+    top: 17%;
+    right: -1.5%;
+}
+.warrior-grade li {
+    display: flex;
+    align-items: center;
+    border: #d3d3d3 1px solid;
+    width: 80%;
+    border-radius: 20px;
+    padding: 3px 5px;
+    margin: 8px;
+
+}
+.warrior-grade li img{
+    padding-right: 10px;
+}
+.warrior-grade li span{
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-right: 10px;
+}
+.warrior-grade li p {
+    color: #606060;
+}
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 40px auto;
+}
+
+/* 후터 */
+footer {
+    background: #000;
+    color: #9f9f9f;
+}
+.last {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+.last-info ul {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last-info ul li {
+    padding: 0 10px;
+    border-right: 1px solid #9e9e9e;
+}
+.last-info ul li:nth-child(5) {
+    color: #fdfdfd;
+    text-decoration: underline;
+}
+.last-info ul li:last-child {
+    border-right: none;
+}
+.address {
+    display: flex;
+    flex-direction: column;
+}
+.address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+.address span:nth-child(2){
+    padding: 5px 0;
+}
+.img-nexon-last {
+    padding: 30px 0;
+}
+.img-nexon-last:hover {
+    cursor: pointer;
+}
+

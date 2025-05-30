@@ -1,0 +1,312 @@
+@import url("common.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* header 부분
+    @since - 2025-05-29
+    @author - kdh
+    subcrible: bsh header tag  apply
+*/
+button {
+    background: none;
+    border: none;
+}
+header.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    font-size: 16px;
+}
+header.header-container .header-left {
+    font-size: 1.1em;
+}
+header.header-container .header-left:hover {
+    color: #0076fd;
+}
+header.header-container .header-left .header-menu-icon{
+    margin-right: 5px;
+}
+header.header-container .header-logo {
+    padding-left: 8%;
+}
+header.header-container .header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header.header-container .header-right .hyundai-card {
+    font-size: 1em;
+    position: relative;
+    padding: 5px 10px;
+    height: 100%;
+}
+header.header-container .header-right .hyundai-card .n-badge i {
+    color: #0076fd;
+    position: absolute;
+    left: 50%;
+    top: -5%
+}
+header.header-container .header-right .hyundai-card .n-badge span {
+    font-size: 0.7em;
+    color: #fff;
+    position: absolute;
+    left: 62%;
+    top: 3%
+}
+header.header-container .header-right .hyundai-card:hover {
+    color: #0076fd;
+}
+header.header-container .header-right .hidden-card-name {
+    display: none;
+}
+header.header-container .header-right .find-pc {
+    padding-left: 10px;
+}
+header.header-container .header-right .find-icon a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("//rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location.svg") no-repeat;
+}
+header.header-container .header-right .find-icon a:hover {
+    background: url("//rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg") no-repeat;
+}
+
+header.header-container .header-right .hidden-find-pc {
+    display: none;
+}
+header.header-container .header-right .join {
+    font-size: 0.9em;
+    padding: 5px 10px;
+    height: 100%;
+}
+header.header-container .header-right .join:hover {
+    color: #0076fd;
+}
+header.header-container .header-right .log-in {
+    font-size: 1em;
+    border: 2px solid #000;
+    border-radius: 15px;
+    height: 100%;
+    padding: 7px 20px;
+    font-weight: 700;
+}
+header.header-container .header-right .log-in:hover {
+    color: #fff;
+    border: 2px solid #0076fd;
+    background: #0076fd;
+    border-radius: 15px;
+}
+
+/* main 부분 */
+main {
+    /* 넥슨 느낌의 배경 */
+    /*background: linear-gradient(to right, #d7d3cc, #f5f5f5);*/
+    text-align: center;
+    font-family: 'Pretendard', sans-serif;
+    color: #333;
+
+    /*  배경 사진 넣기  */
+    /*background-image: url('../src/my-maplestory_kdh_.png'); !* 또는 절대경로 가능 *!*/
+    background-size: cover;      /* 화면을 꽉 채우도록 */
+    background-position: center; /* 가운데 정렬 */
+    background-repeat: no-repeat;/* 반복하지 않도록 */
+    height: 400px;
+    min-height: 100vh;
+    border: 3px solid black;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /*border: 3px solid orangered;*/
+}
+
+main .section-frame {
+    /*background: linear-gradient(to right, #d7d3cc, #f5f5f5);*/
+    /*border: 3px solid blue;*/
+    background-image: url('../src/my-maplestory_kdh_.png');
+    width: 100%;
+    height: 60%;
+    /* 음영 추가 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/*오버레이 기법 사용 */
+main .section-frame::before {
+    content: "";
+    position: absolute;
+    top: 65px; left: 0;
+    width: 100%;
+    height: 60%;
+    background: rgba(0, 0, 0, 0.4); /* 오버레이 색상: 검정에 40% 투명도 */
+    z-index: 1;
+}
+
+main .section-frame > * {
+    position: relative;
+    z-index: 2;
+
+}
+
+main .banner-content {
+    margin-bottom: 40px;
+    /*border: 3px solid red;*/
+    z-index: 1;
+    /*border: 3px solid red;*/
+    margin-top: 100px;
+}
+
+main .banner-content .banner-subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+main .banner-content .banner-title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+main .banner-content .banner-title .highlight {
+    color: #fff8e7;
+    font-weight: 900;
+}
+
+main .banner-content .banner-title .open-text {
+    color: #fff8e7;
+}
+
+main .banner-content .banner-title .badge {
+    display: inline-block;
+    background-color: #e6c28b;
+    color: #3d3d3d;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+main .banner-content .banner-date {
+    background-color: #4b4b4b;
+    color: white;
+    display: inline-block;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+main .banner-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*align-items: center;*/
+    gap: 20px;
+    z-index: 90;
+    /*border: 3px solid pink;*/
+    margin-top: 173px;
+}
+
+main .banner-images a {
+    top: 41px;
+    width: 300px;
+    font-weight: bold;
+    color: #090806;
+    transition: all .5s;
+    text-overflow: ellipsis;
+    /*border: 3px solid rgba(0,0,0,0.3);*/
+    border: 3px solid #fff8e7;
+    font-size: 40px;
+    padding: 10px;
+    color: #fff8e7;
+}
+
+/* footer 부분 */
+footer {
+    background-color: #1e1e1e;
+    color: #ccc;
+    padding: 20px 30px;
+    font-family: sans-serif;
+    font-size: 13px;
+    height: 320px;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+footer .footer-top .notice {
+    font-weight: bold;
+}
+
+footer .footer-top .social-icons a img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+footer .footer-mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #444;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+footer .footer-mid .link-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer .footer-mid .language button {
+    background-color: #333;
+    color: #ccc;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer .footer-mid .language button .globe {
+    margin-left: 6px;
+}
+
+footer .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: #888;
+}
+
+footer .footer-bottom .footer-info p {
+    margin: 4px 0;
+}
+
+footer .footer-logo img {
+    width: 80px;
+    margin-top: 10px;
+}
+

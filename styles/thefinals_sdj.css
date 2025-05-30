@@ -1,0 +1,510 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css");
+
+/* 태그 기본 스타일 초기화 */
+body {
+}
+button {
+    background: none;
+    border: none;
+}
+
+/* 최상단 넥슨 헤더 */
+header.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    font-size: 16px;
+    height: 8vh;
+}
+header.header-container .header-left {
+    font-size: 1.1em;
+    transition: .4s;
+}
+header.header-container .header-left:hover {
+    color: #0076fd;
+    cursor: pointer;
+}
+header.header-container .header-left .header-menu-icon{
+    margin-right: 5px;
+}
+header.header-container .header-logo {
+    padding-left: 8%;
+}
+header.header-container .header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header.header-container .header-right .hyundai-card {
+    font-size: 1em;
+    position: relative;
+    padding: 5px 10px;
+    height: 100%;
+}
+header.header-container .header-right .hyundai-card .n-badge i {
+    color: #0076fd;
+    position: absolute;
+    left: 50%;
+    top: -5%
+}
+header.header-container .header-right .hyundai-card .n-badge span {
+    font-size: 0.7em;
+    color: #fff;
+    position: absolute;
+    left: 62%;
+    top: 3%
+}
+header.header-container .header-right .hyundai-card {
+    transition: .4s;
+}
+header.header-container .header-right .hyundai-card:hover {
+    color: #0076fd;
+    cursor: pointer;
+}
+header.header-container .header-right .hidden-card-name {
+    display: none;
+}
+header.header-container .header-right .find-pc {
+    padding-left: 10px;
+}
+header.header-container .header-right .find-icon a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("//rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location.svg") no-repeat;
+    transition: .4s;
+}
+header.header-container .header-right .find-icon a:hover {
+    background: url("//rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg") no-repeat;
+}
+
+header.header-container .header-right .hidden-find-pc {
+    display: none;
+}
+header.header-container .header-right .join {
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 5px 10px;
+    height: 100%;
+    transition: .4s;
+}
+header.header-container .header-right .join:hover {
+    color: #0076fd;
+}
+header.header-container .header-right .log-in {
+    font-size: 1em;
+    border: 2px solid #000;
+    border-radius: 17px;
+    height: 100%;
+    padding: 7px 20px;
+    font-weight: 700;
+    transition: .4s;
+}
+header.header-container .header-right .log-in:hover {
+    color: #fff;
+    border: 2px solid #0076fd;
+    background: #0076fd;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+
+
+/* 더 파이널스 (서브) 헤더 */
+.header-the-finals {
+    position: sticky;
+    top: 0;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    z-index: 1000;
+}
+.left-tnb-bar {
+    /* 서브헤더 15 70(jc:l) 15 비율 */
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+.left-tnb-bar .tnb-bar-logo {
+    width: 80%;
+    padding-left: 10px;
+}
+.left-tnb-bar .tnb-bar-logo-img {
+    width: 100%;
+}
+.list-tnb-bar {
+    /*border: 4px solid purple;*/
+    width: 100%;
+    height: inherit;
+    display: flex;
+}
+.list-tnb-bar .tnb-nav {
+    /*border: 4px solid orange;*/
+    display: flex;
+    width: 75%;
+    height: 100%;
+    justify-content: left;
+}
+.list-tnb-bar .tnb-nav .tnb-nav-items {
+    /*border: 4px solid red;*/
+    width: 10%;
+    height: 100%;
+    color: #c8c8c8;
+    font-weight: 700;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .2s;
+}
+.list-tnb-bar .tnb-nav .tnb-nav-items:hover {
+    cursor: pointer;
+    color: #fff;
+    border-bottom: 2px solid red;
+}
+.right-tnb-bar .tnb-game-play-list {
+    display: none;
+}
+.right-tnb-bar {
+    height: 100%;
+}
+.right-tnb-bar .tnb-game-play-btn {
+    height: 100%;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/thefinals/03d99162de14c8cdfca9cabdf620971340d16582/assets/common/btn/season1/btn_t_gameplay_bg.webp") no-repeat center/cover;
+}
+.right-tnb-bar .tnb-game-play-btn:hover {
+    cursor: pointer;
+}
+.right-tnb-bar .tnb-game-play-btn:hover img {
+    object-fit: contain;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/thefinals/03d99162de14c8cdfca9cabdf620971340d16582/assets/common/btn/season1/btn_t_gameplay_d.png");
+}
+
+
+/* 메인 비디오 타이틀 container */
+.container {
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/thefinals/03d99162de14c8cdfca9cabdf620971340d16582/assets/main/news/img_background.png") no-repeat center/cover;
+
+}
+.container .main-video-title video {
+    position: absolute;
+    top: 17vh;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;  /* video 크기조절 */
+    /*border: 4px solid purple;*/
+
+}
+.container .main-video-title .main-top-title {
+    color: #fff;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+.container .main-video-title .main-title {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+.container .main-video-title .main-title2 {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.container .main-video-title .main-title-div {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.container .main-video-title .main-title-btn {
+    border: 3px solid #fff;
+    position: relative;
+    z-index: 100;
+    padding: 15px 40px;
+    transition: .4s;
+}
+.container .main-video-title .main-title-btn:hover {
+    cursor: pointer;
+}
+.container .main-video-title .main-title-btn:hover .main-title-btn-txt {
+    color: orange;
+    display: none;
+}
+.container .main-video-title .main-title-btn .main-title-btn-txt2 {
+    font-size: 25px;
+    font-style: italic;
+    color: #fff;
+    display: none;
+}
+.container .main-video-title .main-title-btn:hover .main-title-btn-txt2 {
+    display: inherit;
+}
+.container .main-video-title .main-title-btn-txt {
+    font-size: 20px;
+    color: #fff;
+}
+.container .main-video-title .main-title-list {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    top: 100px;
+    /*border: 4px solid red;*/
+}
+.container .main-video-title .main-title-list .main-title-list-items {
+    margin: 0 30px;
+    opacity: 0.7;
+}
+
+
+
+/* 메인 최신소식 */
+
+.main-latest-news {
+    position: relative;
+    top: 200px;
+}
+.main-latest-news .main-latest-news-title {
+    font-size: 85px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 100px;
+}
+.main-latest-news .main-latest-news-list {
+    /*border: 4px solid red;*/
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.main-latest-news-list-items {
+    display: flex;
+}
+.main-latest-news-list-items-card {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.main-latest-news-list-items-card img {
+    width: 100%;
+    height: 50%;
+}
+.main-latest-news-list-items-card img:hover {
+    cursor: pointer;
+}
+.main-latest-news-list-items-card .main-latest-news-list-items-card-title {
+    color: #fff;
+    margin-top: 16px;
+}
+.main-latest-news-list-items-card .main-latest-news-list-items-card-title:hover {
+    cursor: pointer;
+}
+.main-latest-news-list-items-card .main-latest-news-list-items-card-date {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    opacity: 0.7;
+}
+.main-latest-news-btn {
+    border: 2px solid #fff;
+    margin: 0 42%;
+    padding: 20px 25px;
+    position: relative;
+    z-index: 100;
+}
+.main-latest-news-btn:hover {
+    cursor: pointer;
+}
+.main-latest-news-btn-txt {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+/* 메인 시즌 */
+.main-season {
+    width: 100%;
+    /*border: 4px blue solid;*/
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+}
+.main-season-bg {
+    width: 100%;
+}
+.main-season-fg {
+    position: absolute;
+    top: 380px;
+    right: 10px;
+}
+.main-season-container {
+    position: relative;
+    top: 450px;
+    height: 30vh;
+    padding-left: 70px;
+}
+.main-season-title {
+    font-size: 50px;
+    font-weight: 1000;
+    font-style: italic;
+    padding-top: 20px;
+}
+.main-season-sub-title {
+    color: #fff;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.main-season-description {
+    width: 500px;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.main-season-btn {
+    border: 2px solid #fff;
+    margin-top: 50px;
+    padding: 20px 50px;
+}
+.main-season-btn:hover {
+    cursor: pointer;
+}
+.main-season-btn-txt {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+/* 사이드네비게이션 */
+.main-snb {
+    position: fixed;
+    top: 40%;
+    right: 10px;
+    width: fit-content;
+    height: fit-content;
+    /*border: 4px solid red;*/
+}
+.main-snb-list-items.discord {
+    border: 4px solid royalblue;
+    border-radius: 50%;
+    background: royalblue;
+    margin-top: 15px;
+}
+.main-snb-list-items.twitter {
+    border: 4px solid #007bff;
+    border-radius: 50%;
+    background: #0076fd;
+    margin-top: 15px;
+}
+.main-snb-list-items.youtube {
+    border: 4px solid red;
+    border-radius: 50%;
+    background: red;
+    margin-top: 15px;
+}
+/*.main-snb-list-items.instagram {*/
+/*    border: 4px solid orangered;*/
+/*    border-radius: 50%;*/
+/*    background: orangered;*/
+/*    margin-top: 15px;*/
+/*}*/
+.main-snb-list-items img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+.main-snb-list-items:hover {
+    cursor: pointer;
+}
+
+
+
+/* 푸터 */
+.footer-the-finals {
+    background: rgb(31, 29, 36);
+    /*border: 4px solid red;*/
+    height: 50vh;
+    padding: 50px;
+}
+.footer-description {
+    display: flex;
+    padding-top: 50px;
+}
+.footer-description-txt-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+.footer-description-title {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer-description-txt {
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.footer-brand-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*margin-top: 70px;*/
+    margin: 70px 0 0 0;
+}
+.footer-brand-logo-list-left {
+    display: flex;
+}
+.footer-brand-logo-list-left-items {
+    margin-right: 20px;
+}
+.footer-brand-logo-list-right {
+    display: flex;
+}
+.footer-brand-logo-list-right-items {
+    margin-left: 20px;
+}
+.footer-etc-text {
+    margin-top: 20px;
+}
+.footer-etc-list {
+    display: flex;
+}
+.footer-etc-list-items {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 30px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+.footer-etc-blah {
+    font-size: 10px;
+    color: #fff;
+    line-height: 1.8;
+    opacity: 0.6;
+}

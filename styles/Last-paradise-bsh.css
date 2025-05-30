@@ -1,0 +1,1108 @@
+@import url("common.css");
+
+body {
+    width: 100vw;
+    padding: 0;
+}
+
+/*백승현의 헤더               */
+/*header.main-header_bsh {*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    !*display: none;*!*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    height: 6rem;*/
+/*    padding: 0 1.2%;*/
+/*    position: relative;*/
+/*    z-index: 9999;*/
+/*    background: white;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-menu_bsh {*/
+/*    width: 10%;*/
+/*    transition: 0.4s;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-menu_bsh:hover {*/
+/*    color: #007bff;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-menu_bsh .fas {*/
+/*    margin-right: 5%;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-logo_bsh {*/
+/*    width: fit-content;*/
+/*    align-items: center;*/
+/*    margin-left: 4%;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh {*/
+/*    font-size: 1.5rem;*/
+/*    width: 15%;*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*    align-items: center;*/
+/*    height: fit-content;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh a {*/
+/*    margin-left: 5%;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh .credit-card {*/
+/*    font-size: 2rem;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh .login_bsh {*/
+/*    border: 2px solid black;*/
+/*    border-radius: 20px;*/
+/*    padding: 2% 7% 3% 7%;*/
+/*    text-align: center;*/
+/*    font-weight: 800;*/
+/*    transition: 0.4s;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh .login_bsh:hover {*/
+/*    border: 2px solid #007bff;*/
+/*    background: #007bff;*/
+/*    color: white;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh .register_bsh, .credit-card {*/
+/*    transition: 0.4s;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh .register_bsh:hover, .credit-card:hover {*/
+/*    color: #007bff;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh .pcbang {*/
+/*    width: 2.5rem;*/
+/*    height: 2.5rem;*/
+/*    background: url('https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location.svg') no-repeat center/cover;*/
+/*    transition: 0.4s ease;*/
+/*}*/
+
+/*header.main-header_bsh .main-header-gnb_bsh .pcbang:hover {*/
+/*    background: url("https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg") no-repeat center/cover;*/
+/*}*/
+/*백승현의 헤더                    */
+button {
+    background: none;
+    border: none;
+}
+
+header.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    font-size: 16px;
+    position: relative;
+    z-index: 9999;
+    background: white;
+}
+
+header.header-container .header-left {
+    font-size: 1.1em;
+}
+
+header.header-container .header-left:hover {
+    color: #0076fd;
+}
+
+header.header-container .header-left .header-menu-icon {
+    margin-right: 5px;
+}
+
+header.header-container .header-logo {
+    padding-left: 8%;
+}
+
+header.header-container .header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header.header-container .header-right .hyundai-card {
+    font-size: 1em;
+    position: relative;
+    padding: 5px 10px;
+    height: 100%;
+}
+
+header.header-container .header-right .hyundai-card .n-badge i {
+    color: #0076fd;
+    position: absolute;
+    left: 50%;
+    top: -5%
+}
+
+header.header-container .header-right .hyundai-card .n-badge span {
+    font-size: 0.7em;
+    color: #fff;
+    position: absolute;
+    left: 62%;
+    top: 3%
+}
+
+header.header-container .header-right .hyundai-card:hover {
+    color: #0076fd;
+}
+
+header.header-container .header-right .hidden-card-name {
+    display: none;
+}
+
+header.header-container .header-right .find-pc {
+    padding-left: 10px;
+}
+
+header.header-container .header-right .find-icon a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("//rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location.svg") no-repeat;
+}
+
+header.header-container .header-right .find-icon a:hover {
+    background: url("//rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg") no-repeat;
+}
+
+header.header-container .header-right .hidden-find-pc {
+    display: none;
+}
+
+header.header-container .header-right .join {
+    font-size: 0.9em;
+    padding: 5px 10px;
+    height: 100%;
+}
+
+header.header-container .header-right .join:hover {
+    color: #0076fd;
+}
+
+header.header-container .header-right .log-in {
+    font-size: 1em;
+    border: 2px solid #000;
+    border-radius: 15px;
+    height: 100%;
+    padding: 7px 20px;
+    font-weight: 700;
+}
+
+header.header-container .header-right .log-in:hover {
+    color: #fff;
+    border: 2px solid #0076fd;
+    background: #0076fd;
+    border-radius: 15px;
+}
+
+
+/*---------- 메인헤더 끝 ----------*/
+
+
+.second-header_bsh {
+    width: inherit;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+    top: 0;
+    left: 0;
+    height: 6rem;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-header_bsh .paradise-logo_bsh {
+    margin-left: 2rem;
+}
+
+.second-header_bsh .paradise-slogan_bsh {
+    width: 100%;
+    padding-left: 35%;
+    margin-left: 1%;
+}
+
+/*서브 네비게이션*/
+
+
+.second-header_bsh .snb_bsh ul {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* 서브네비게이션 사이의 줄*/
+.second-header_bsh .snb_bsh ul li {
+    width: 5rem;
+}
+
+.second-header_bsh .snb_bsh ul li:nth-child(-n+2) {
+    border-right: 1px solid rgba(100, 100, 100, 0.5);
+}
+
+
+/*구독배너*/
+.second-header_bsh .subscribe_bsh {
+    width: 262px;
+    height: 6rem;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/be8f510beea7dc62c17f792ce355f816c133a833/assets/teaser/image/header_button-bg.png") no-repeat bottom/cover;
+    background-size: 140%;
+    background-position-y:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-header_bsh .subscribe_bsh i {
+    font-size: 2.5rem;
+}
+
+.second-header_bsh .subscribe_bsh i > span {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+/*구독배너 끝*/
+
+/* 좌측 세로 배너 */
+.vertical-header {
+    display: flex;
+    width: 3%;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid rgba(100, 100, 100, 0.5);
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 20%;
+    gap: 33rem;
+
+}
+
+.vertical-header ul {
+}
+
+.vertical-header ul li {
+    padding: 80% 0;
+    transition: 0.4s;
+}
+
+.vertical-header ul li:hover {
+    color: orange;
+}
+
+.vertical-header ul li:nth-child(2) {
+    border-top: 1px solid rgba(100, 100, 100, 0.5);
+}
+
+.vertical-header .sound-button {
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.vertical-header .sound-button:hover {
+    color: orange;
+}
+
+/* 좌측 세로 배너 끝 */
+
+
+/* 메인섹션 */
+.main-section_bsh {
+    height: 100vh;
+    width: 100%;
+}
+
+.video-container_bsh {
+    width: 100%;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.video-container_bsh video {
+    width: 100%;
+}
+
+/* 메인섹션 로고 */
+.main-section_bsh .main-section-logo {
+    width: fit-content;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    z-index: 3;
+}
+
+.main-section_bsh .main-section-logo #paradise-logo {
+    width: 80%;
+}
+
+/*찜하기 뉴스레터 구독*/
+
+.main-section_bsh .main-section-subscribe_bsh {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 20;
+    position: relative;
+    top: 55%;
+    left: 10%;
+    color: white;
+}
+
+.main-section_bsh .main-section-subscribe_bsh i.fab {
+    position: absolute;
+    top: 37%;
+    left: 18%;
+    font-size: 2rem;
+}
+
+.main-section_bsh .main-section-subscribe_bsh #pick {
+    position: absolute;
+    top: 37%;
+    left: 23%;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.main-section_bsh .main-section-subscribe_bsh i.fas {
+    position: absolute;
+    top: 37%;
+    right: 33%;
+    font-size: 2rem;
+}
+
+.main-section_bsh .main-section-subscribe_bsh #news {
+    position: absolute;
+    top: 37%;
+    right: 14%;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+/* 메인 섹션 플레이 버튼*/
+
+.play-trailer_bsh {
+    margin-left: 67vw;
+    margin-top: 15vh;
+    width: 12rem;
+    height: 12rem;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/play.png") no-repeat center/cover;
+    transition: 0.4s;
+    filter: brightness(1000%);
+}
+
+.play-trailer_bsh:hover {
+    filter: brightness(100%);
+    cursor: pointer;
+}
+
+.play-trailer_bsh span {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: -60%;
+}
+
+/*플레이버튼 끝*/
+/*메인섹션 완료*/
+
+/*이메일 구독 섹션 시작*/
+
+.second-section {
+    width: 100vw;
+    height: 100vh;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/subscribe_bg.png") no-repeat center/cover;
+}
+
+.email-register {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10vh 0;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/subscribe_frame.png") no-repeat;
+    background-position-x: 50%;
+    background-position-y: 57%;
+}
+
+.email-register .decorate-claw {
+    width: fit-content;
+}
+
+.email-register .decorate-claw img {
+    width: 180%;
+}
+
+.email-register .news-letter {
+    background: url('https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/title-deco-line.png') no-repeat bottom/contain;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.8rem;
+    color: #f7844b;
+}
+
+.email-register h1 {
+    font-size: 4.3rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 6rem;
+    color: #e6e6eb;
+    width: 40vw;;
+}
+
+.email-register h1 span {
+    color: #f7844b;
+    position: relative;
+}
+
+/*메인 텍스트까지 끝*/
+
+.email-register .email-input {
+    width: 40vw;
+    height: 8vh;
+    background: transparent;
+    border: 1px solid rgba(150, 150, 150, 0.6);
+    font-size: 2rem;
+    padding: 0 3rem;
+    color: #e6e6eb;
+}
+
+.email-register .sub-button a {
+    display: block;
+    width: 40vw;
+    height: 7.5vh;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    font-weight: 700;
+    background: url("/src/paradise-subscribe_button-bg_bsh.png") no-repeat center/cover;
+    transition: 0.4s;
+}
+
+.email-register .sub-button a:hover {
+    background: url("/src/paradise-subscribe_button-bg-hover_bsh.png") no-repeat center/cover;
+}
+
+/*구독하기 버튼 끝*/
+.email-register .checkbox {
+    margin-right: 16%;
+    line-height: 4rem;
+    color: #96979c;
+}
+
+.email-register .checkbox span {
+    margin-left: 2rem;
+}
+
+.email-register .checkbox a {
+    margin-left: 3rem;
+    color: #f7844b;
+    text-decoration: underline;
+}
+
+.email-register .checkbox a:hover {
+    font-weight: 600;
+}
+
+/*체크박스 끝*/
+
+.email-register .information {
+    height: 10vh;
+    width: 37vw;
+    color: #96979c;
+    font-size: 1.7rem;
+
+
+}
+
+.email-register .information li:last-child {
+    margin-top: 2rem;
+}
+
+.email-register .information li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-register .information i {
+    font-size: 8px;
+    line-height: 5px;
+    margin-right: 5px;
+    align-self: flex-start;
+    margin-top: 6px;
+}
+
+/*이메일 등록 끝*/
+
+/*게임 소개 구간 시작*/
+.introduce-game {
+    width: 100vw;
+    height: 70vh;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/about_bg.jpg") no-repeat center/cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10vh 7vw;
+    gap: 3rem;
+}
+
+.introduce-game .introduce-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    height: 25vh;
+    padding-top: 5rem;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/about_tape.png") no-repeat;
+    background-position-y: 35%;
+    background-position-x: 15%;
+}
+
+.introduce-game .introduce-title h3 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-left: 2vw;
+    color: #e6e6eb;
+    line-height: 7rem;
+}
+
+.introduce-game .introduce-text {
+    width: 30vw;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    color: #96979c;
+    margin-left: 15rem;
+}
+
+/*게임스토리 시작*/
+.story-bgcontainer {
+    position: relative;
+    overflow: hidden;
+}
+
+/*스토리 배경 애니메이션*/
+.story-bgcontainer .story-img-box {
+    width: 120vw;
+    height: 120vh;
+    /*background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_bg_01.jpg") no-repeat center/cover;*/
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    animation: img-rolling 40s linear infinite alternate, img-changing 30s linear infinite alternate;
+}
+
+.game-story {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.game-story .story-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /*border: 1px solid red;*/
+    height: 100vh;
+    padding: 0 2vw;
+    margin-left: 10vw;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_header-bg.png") no-repeat center/cover;
+    padding-bottom: 25vh;
+
+}
+
+.game-story .story-title h4 {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #e6e6eb;
+    line-height: 7rem;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/title-line.png") no-repeat;
+    background-position-y: 100%;
+    height: 20vh;
+    margin-top: 3vh;
+}
+
+.game-story .story-title p {
+    /*border: 1px solid red;*/
+    width: 20vw;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #e6e6eb;
+    line-height: 2.2rem;
+    margin-top: 5rem;
+}
+
+/*좌측 완료*/
+.game-story .text-box {
+    /*border: 1px red solid;*/
+    width: 40vw;
+    height: 50vh;
+    overflow: hidden;
+    margin-right: 12vw;
+    margin-top: 35vh;
+}
+
+.game-story .text-box div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+}
+
+.game-story .text-1 {
+    position: absolute;
+    top: 16rem;
+    right: 0;
+    z-index: 30;
+    opacity: 0;
+}
+
+.game-story .text-2 {
+    position: absolute;
+    top: -0.1rem;
+    right: 0;
+    z-index: 31;
+    opacity: 0;
+}
+
+.game-story .text-3 {
+    position: absolute;
+    top: -21rem;
+    right: 0;
+    z-index: 32;
+    opacity: 0;
+}
+
+.game-story .text-box h5 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #e6e6eb;
+    margin-bottom: 3rem;
+}
+
+.game-story .text-box p {
+    color: #e6e6eb;
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 40vw;
+    text-align: right;
+}
+
+/*text-rolling effect 추가*/
+@keyframes text-rolling {
+    0% {
+        opacity: 0;
+    }
+    3.3% {
+
+        opacity: 1;
+    }
+    26.4% {
+        opacity: 1;
+    }
+    29.7% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.game-story .text-box .text-1 {
+    animation: text-rolling 30s infinite;
+}
+
+.game-story .text-box .text-2 {
+    animation: text-rolling 30s infinite;
+    animation-delay: 10s;
+}
+
+.game-story .text-box .text-3 {
+    animation: text-rolling 30s infinite;
+    animation-delay: 20s;
+}
+
+/*배경 애니메이션 키프레임 구간*/
+@keyframes img-rolling {
+    0% {
+        transform: rotate(0deg) scale(1.0);
+    }
+    100% {
+        transform: rotate(10deg) scale(1.2);
+    }
+}
+
+@keyframes img-changing {
+
+    0% {
+        background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_bg_01.jpg") no-repeat center/cover;
+    }
+
+    40% {
+        background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_bg_02.jpg") no-repeat center/cover;
+    }
+
+    100% {
+        background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/story_bg_03.jpg") no-repeat center/cover;
+    }
+}
+
+
+/*소셜 섹션*/
+.social-section {
+
+    width: 100%;
+    height: 200vh;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/social_bg.jpg") no-repeat center/cover;
+    color: white;
+}
+
+.social-title {
+    margin-left: 40%;
+    padding-top: 5rem;
+}
+
+.social-section .social-title h3 {
+    font-size: 8rem;
+    font-weight: 700;
+    color: #e8e8ed;
+    /*border: 1px solid red;*/
+    padding-top: 15rem;
+    height: 30rem;
+    width: 40rem;
+    text-align: center;
+    background: url("https://sht-vod.dn.nexoncdn.co.kr/nakwon/ade1f3cbb66231b7566783121cb0e2228199c546/assets/teaser/image/title-deco-blur.png") no-repeat center/contain;
+    background-position-y: 5rem;
+}
+
+.social-section .social-title p {
+    font-size: 1.6rem;
+    color: #e9844b;
+    font-weight: 500;
+    margin-top: 3rem;
+}
+
+.social-section .social-list {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    gap: 3rem;
+}
+
+.social-section .social-list .social-image {
+    /*border: 1px solid red;*/
+    width: 47rem;
+    height: 24rem;
+    overflow: hidden;
+}
+
+.social-section .social-list .social-image img {
+    object-fit: cover;
+    width: 100%;
+    transform: translateY(-13%);
+    transition: 0.4s ease;
+}
+
+.social-section .social-list .social-item {
+
+    border: 1px solid #272e31;
+    height: 47rem;
+    padding-bottom: 5%;
+    background: #1b1b1d;
+
+}
+
+.social-section .social-list .social-item .item-top {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1b1b1d;
+    font-size: 1.6rem;
+    color: #8d8e93;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.youtube-sub {
+    margin-left: 32%;
+    margin-right: 3%;
+}
+
+.item-bottom-a {
+    /*border: 1px solid red;*/
+    width: 95%;
+    height: 3rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-left: 2.5%;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.item-bottom-a a {
+    display: block;
+    /*border: 1px solid red;*/
+    padding: 5rem 0;
+    background: #272e31;
+}
+
+.date {
+    /*border: 1px solid red;*/
+    text-align: center;
+    margin-top: 10rem;
+    color: #96979c;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.social-section .social-list .social-item:hover .social-image img {
+    transform: scale(1.05) translateY(-13%);
+}
+
+.social-section .social-list .social-item:hover .item-bottom-a {
+    color: #e9844b;
+    text-decoration: underline;
+    transition: 0.4s ease;
+}
+
+/*SNS 링크 버튼*/
+.social-section .social-link {
+    /*border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7rem;
+    gap: 3rem;
+}
+
+.social-section .social-link .official-sns {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e9844b;
+}
+
+.social-section .social-link .social-icons-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-section .social-link .social-icons-link .fa-youtube {
+    font-size: 2.8rem;
+    margin-left: 1rem;
+    margin-top: 1.1rem;
+}
+
+.social-section .social-link .social-icons-link .fa-instagram {
+    font-size: 3rem;
+    margin-left: 1.2rem;
+    margin-top: 1.1rem;
+}
+
+.social-section .social-link .social-icons-link .fa-discord {
+    font-size: 2.8rem;
+    margin-left: 1.3rem;
+    margin-top: 1.2rem;
+}
+
+.social-section .social-link .social-icons-link a {
+    /*border: 1px solid red;*/
+    width: 5rem;
+    height: 5rem;
+    background: url("/src/social-bg_bsh.png");
+    transition: 0.4s;
+}
+
+.social-section .social-link .social-icons-link a:hover {
+    background: url("/src/social-bg-hover_bsh.png");
+    color: #e9844b;
+}
+
+/*TOP 버튼*/
+.top-button {
+    width: 6rem;
+    height: 6rem;
+    margin-left: 48.5%;
+    margin-top: 7rem;
+}
+
+.top-button a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url("/src/top_bsh.png");
+    transition: 0.4s;
+}
+
+.top-button a:hover {
+    background: url("/src/top-hover_bsh.png");
+}
+
+/*우측 디코티비 */
+.right-sidebar {
+    position: fixed;
+    right: 3%;
+    width: fit-content;
+    top: 80%;
+    z-index: 900;
+}
+.right-sidebar .right-new{
+    width: 100%;
+    text-align: center;
+    color: #e24757;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+    height: 40vh;
+    background: #000;
+    padding: 0 20rem;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e8e8e8;
+}
+
+.footer-flex .left-ele {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 17rem;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 4rem;
+    color: #96979c;
+}
+
+.footer-flex .left-ele a {
+    border-right: 1px solid rgba(100, 100, 100, 0.5);
+    padding: 0 3rem;
+}
+.footer-flex .left-ele li:nth-child(4)>a{
+    border-right: none;
+}
+
+
+
+.footer-flex .left-ele .personal-info {
+    color: white;
+}
+
+.footer-flex .left-ele a:hover {
+    text-decoration: underline;
+}
+
+.footer-flex .right-ele {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 18rem;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 4rem;
+    color: #96979c;
+    gap: 3rem;
+
+}
+
+.footer-flex .right-ele span {
+    border-right: 1px solid rgba(100, 100, 100, 0.5);
+    padding: 0 3rem;
+}
+.footer-flex .right-ele select{
+    border: 2px #96979c solid;
+    width: 13rem;
+    height: 3.2rem;
+    background: #000;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+.copyright{
+    color: #96979c;
+    font-size: 12px;
+    font-weight: 600;
+    border-top: 1px rgba(100, 100, 100, 0.5) solid;
+    border-bottom: 1px rgba(100, 100, 100, 0.5) solid;
+    margin-top: 8rem;
+    padding: 2.7rem 0;
+}
+
+.footer-nexon{
+    /*border: 1px solid red;*/
+    width: fit-content;
+    position: relative;
+    top: 7rem;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
